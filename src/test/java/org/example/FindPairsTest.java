@@ -49,7 +49,6 @@ public class FindPairsTest {
         int[] array = {3, 4, 2, 7, 1, 5, 6, 8};
         int targetSum = 10;
         FindPairs.findPairs(array, targetSum);
-        // This should print (3, 7) and (4, 6)
     }
 
     @Test
@@ -58,7 +57,6 @@ public class FindPairsTest {
         int[] array = {2, 3, 4, 3, 5, 6, 4};
         int targetSum = 8;
         FindPairs.findPairs(array, targetSum);
-        // This should print (4, 4) and (3, 5)
     }
 
     @Test
@@ -67,6 +65,12 @@ public class FindPairsTest {
         int[] array = {2, -3, 4, -7, 1, 5, -6, 8};
         int targetSum = -1;
         FindPairs.findPairs(array, targetSum);
-        // This should print (2, -3) and (-7, 6)
+    }
+    @Test
+    public void testNegativeNumbers2() {
+        // Test case: Array with negative numbers that sum to the target
+        int[] array = {2, -3, 4, -7, 1, 5, -6, 8};
+        int targetSum = -1;
+        FindPairs.findPairs(array, targetSum);
     }
 }
