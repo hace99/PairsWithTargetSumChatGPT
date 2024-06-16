@@ -66,11 +66,4 @@ public class FindPairsTest {
         int targetSum = -1;
         FindPairs.findPairs(array, targetSum);
     }
-    @Test
-    public void testNegativeNumbers2() {
-        // Test case: Array with negative numbers that sum to the target
-        int[] array = {2, -3, 4, -7, 1, 5, -6, 8};
-        int targetSum = -1;
-        FindPairs.findPairs(array, targetSum);
-    }
 }
